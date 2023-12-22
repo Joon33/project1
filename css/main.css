@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+@import url(reset.css);
+
+
+/* ******************* 레이아웃 구성시작 **************** */
+#wrap{
+  width: 960px;
+  height: auto;
+  padding: 0 15px;
+  margin: auto;
+}
+
+#header{
+  height: 105px;
+  padding: 21px 0;
+  margin-bottom: 21px;
+}
+#mainview{
+  height: 210px;
+  margin-bottom: 42px;
+}
+#contents{
+  width: 610px;
+  height: auto;
+  float: left;
+}
+#sidebar{
+  width: 290px;
+  height: auto;
+  float: right;
+  margin-bottom: 84px;
+}
+#footer{ 
+  height: 63px;
+  background-color: #333;
+  color:#fff;
+  clear: both;
+ }
+ 
+ 
+/* ******************* 공통영역 선언시작 **************** */
+h2, h3{
+  height: 42px;
+  font:bold 1.8rem/42px 'Nanum Gothic', sans-serif;
+}
+h2{ font-size: 20px; }
+ 
+ 
+/* ******************* 개별영역 선언시작 **************** */
+
+/* ******************* Header Area Start **************** */
+/* LOGO */
+#header h1{
+  width: 130px;
+  height: 63px;
+  background-image: url(../images/LOGO.png);
+  float: left;
+}
+/* GNB */
+.gnb{
+  width: 450px;
+  height: 42px;
+  float: right;
+  position: relative;
+  top:10px;
+}
+.gnb li{
+  height: 100%;
+  float: left;
+  border-right: 1px solid #fff;
+}
+.gnb li a{
+  display: block;
+  padding: 0 24px;
+  height: 100%;
+  font:bold 1.4rem/42px 'Nanum Gothic', sans-serif;
+  background-color: #333;
+  color: #fff;
+}
+.gnb li a:hover{ color: #fc0;  }
+
+
+/* ******************* Mainview Area Start **************** */
+#mainview .text-box{
+  width: 610px;
+  height: 100%;
+  float: left;
+  padding-top: 21px;
+ }
+#mainview .text-box h2{ color: #ce7005; margin-bottom: 21px; }
+
+#mainview img{
+  float: right;
+}
+
+
+/* ******************* Contents Area Start **************** */
+#contents>div{
+  width: 100%;
+  height: 189px;
+  margin-bottom: 21px;
+}
+#contents>div:last-child{ margin-bottom: 0; }
+#contents>div .text-box{
+  width: 290px;
+  height: 100%;
+  float: right;
+}
+#contents>div img{ float: left; }
+
+
+/* ******************* Sidebar Area Start **************** */
+#sidebar>div{
+  width: 290px;
+  height: 189px;
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: 21px;
+}
+#sidebar>div:last-child{ margin-bottom: 0; }
+#sidebar>div .icon-box{
+ width: 50px;
+ height: 42px;
+ text-align: center;
+ line-height: 42px;
+ position: absolute; top: 0; left: 0;
+}
+#sidebar>div:nth-child(1) .icon-box{ font-size: 3rem; color: #ae4005 }
+#sidebar>div:nth-child(2) .icon-box{ font-size: 2.5rem; color: #7ca621  }
+#sidebar>div:nth-child(3) .icon-box{ font-size: 3.3rem; color: #0d90db  }
+
+
+/* ******************* Footer Area Start **************** */
+#footer p{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 63px;
+}
+
+
+ 
+ 
